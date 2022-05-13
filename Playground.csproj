@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0-android</TargetFrameworks>
+
+		<OutputType>Exe</OutputType>
+		<RootNamespace>PlaygroundAndroid</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+
+		<!-- Display name -->
+		<ApplicationTitle>SK Playground</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.sg.skplayground</ApplicationId>
+		<ApplicationIdGuid>9844ce36-b310-4826-87d2-e2270f7cdf51</ApplicationIdGuid>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion>28.0</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\appicon.svg" ForegroundFile="Resources\appiconfg.svg" Color="#512BD4" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="StereoKit" Version="0.3.5" />
+	</ItemGroup>
+
+</Project>
